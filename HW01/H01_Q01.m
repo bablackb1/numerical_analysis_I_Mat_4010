@@ -1,5 +1,5 @@
-% Brookes Heil Blackburn
-% HW01_001
+%Brookes HeilBlackburn
+%H01_Q01
 
 % Script to estimate the square root of a positive real
 
@@ -15,10 +15,10 @@ error_estimates = [];
 %   estimate of square root, 
 %   error tolerance, 
 %   maximum number of iterations
-a = 14 %input('Enter a value for a: ');
-x(1) = 2%input('Enter a value for x1 ');
-fEpsilon =1e-6% input('Enter a value for epsilon: ');
-nMax = 15%input('Enter a value for nMax: ');
+a = input('Enter the value for a: ');
+x(1) = input('Enter the value for x1: ');
+fEpsilon = input('Enter the value for epsilon: ');
+nMax = input('Enter the value for nMax: ');
 actual_value = sqrt(a);
 
 % initialize counter and eHat estimate variables
@@ -44,7 +44,7 @@ while (a_ferror_estimate > fEpsilon) && (n < nMax)
     error_estimates(n) = a_ferror_estimate;
 
     % print output
-    fprintf('For n = %d, x(%d) =  %.2f and eHat ( %d)| = %.2e\n', n, n, x(n), n, a_ferror_estimate)
+    fprintf('For n =  %d, x(  %d ) =  %.2f and |eHat ( %d )| = %.2e\n', n, n, x(n), n, a_ferror_estimate)
 end
 
 % % Draw sqrt graph
