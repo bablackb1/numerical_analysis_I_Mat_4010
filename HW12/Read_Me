@@ -1,1 +1,8 @@
-tbd
+# Homework: Conjugate Gradient Method
+
+## Overview
+This assignment implements the **Conjugate Gradient (CG) method** for solving systems of linear equations:
+
+\[
+Ax = b,
+\]
