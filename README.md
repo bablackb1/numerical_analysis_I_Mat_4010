@@ -32,6 +32,8 @@ This repository contains a collection of Homework write-ups in Latex, inclusive 
 - Jacobi 
 - Conjugate Gradient
 
+## Note
+- This repository is a work in progress and Homeworks will continue to be added
 ---
 
 
