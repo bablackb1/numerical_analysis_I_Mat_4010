@@ -4,7 +4,7 @@
 
 
 function [x, residual, residualNorm, counter, loop_count, lambda, alpha] = ...
-    H12_Q02_clean(A, b, x0, epsilon, maxk, normType)
+    H12_Function_Conjugate_Gradient(A, b, x0, epsilon, maxk, normType)
 
     % Preallocate
     n = length(A);
@@ -70,6 +70,7 @@ sum_squares_res = 0;
         resNorm = max(abs(res));
     end
 end
+
 
 
 
