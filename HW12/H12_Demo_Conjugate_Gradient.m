@@ -12,7 +12,7 @@ clear; clc; clf; cla;
     normType=1;
 
     [x, residual, residualNorm, counter, loop_count, lambda, alpha] = ...
-    H12_Q02_clean(A, b, x0, epsilon, maxk, normType);
+    H12_Function_Conjugate_Gradient(A, b, x0, epsilon, maxk, normType);
 
     fprintf('Initialization \n');
     fprintf('x( 1 ) = [ %.6f ; %.6f ; %.6f ]\n', x(1,1), x(2,1), x(3,1));
@@ -53,3 +53,4 @@ end
     % maxk = input('Enter a maximum value for k: ');
     % normType = input('Enter the norm type (1 for L2, 2 for infinity): ');
     
+
